@@ -63,25 +63,25 @@ The project includes a set of prerequisites in the [Prerequisites](Prerequisites
 
 #### Attacks
 
-    The project addresses the following attack scenarios:
+The project addresses the following attack scenarios:
 
-    - [KGL-win](KGL-win/Attacks)
-    - [Vulnerable website](Vulnerable-Website)
-        - [SQL INJECTION](Vulnerable-Website/Attacks/SQL-INJECTION)
-        - [Broken access control](Vulnerable-Website/Attacks/Broken-Access-Control)
-    - [BadUSB](BadUSB/Attacks)
-    - [Stolen Fingerprint](Stolen-Fingerprint/Attacks)
+- [KGL-win](KGL-win/Attacks)
+- [Vulnerable website](Vulnerable-Website)
+    - [SQL INJECTION](Vulnerable-Website/Attacks/SQL-INJECTION)
+    - [Broken access control](Vulnerable-Website/Attacks/Broken-Access-Control)
+- [BadUSB](BadUSB/Attacks)
+- [Stolen Fingerprint](Stolen-Fingerprint/Attacks)
 
 #### Mitigations
 
-    To mitigate the identified threats, refer to the following folders:
+To mitigate the identified threats, refer to the following folders:
 
-    - [KGL-win Mitigations](KGL-win/Mitigations)
-    - [Vulnerable website Mitigations](Vulnerable-Website/Mitigations)
-    - [BadUSB Mitigations](BadUSB/Mitigations)
-    - [Stolen Fingerprint Mitigations](Stolen-Fingerprint/Mitigations)
+- [KGL-win Mitigations](KGL-win/Mitigations)
+- [Vulnerable website Mitigations](Vulnerable-Website/Mitigations)
+- [BadUSB Mitigations](BadUSB/Mitigations)
+- [Stolen Fingerprint Mitigations](Stolen-Fingerprint/Mitigations)
 
-    For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
+For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
 
 ## Conclusion
 
