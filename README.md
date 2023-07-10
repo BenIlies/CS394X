@@ -13,27 +13,75 @@ The following assumptions have been made regarding the threats:
 - The firewall and the Raspberry Pi are considered totally trustworthy.
 - The attacker knows the IP address of the client and the server. They also know the process that is running, including the port and command that would unlock the vault.
 
+## Topology
+
+```
+                        +----------------------------------------------------+
+                        |                      Client                        |
+                        |   VM (Windows 7) - Vmnet0: 192.168.5.107           |
+                        |   Host (Windows 10) - en0: 192.168.5.106           |
+                        |                                                    |
+                        +----------------------------------------------------+
+                                            |                              
+                                            |                              
+                        +----------------------------------------------------+
+                        |                      Router                        |
+                        |   en0: 192.168.5.1 (Client side)                   |
+                        |   en1: 10.10.1.1 (Server side)                     |
+                        |                                                    |
+                        +----------------------------------------------------+
+                                            |                              
+                                            |                              
+                        +----------------------------------------------------+
+                        |                      Server                        |
+                        |   Raspberry Pi - en0: 10.10.1.231                  |
+                        |                                                    |
+                        |   Processes:                                       |
+                        |   - Port 9999 (Listening)                          |
+                        |   - Port 51130 (Listening)                         |
+                        |                                                    |
+                        |   Arduino Controller (Connected)                   |
+                        |   (Controls the vault door)                        |
+                        +----------------------------------------------------+
+```
+
+
+Topology Description:
+
+- **Client**: It consists of a virtual machine (guest OS) running Windows 7 with IP address 192.168.5.107 on interface Vmnet0, and the host OS (Windows) with IP address 192.168.5.106 on interface en0. The client is connected to the router via the host OS.
+
+- **Router**: It connects the client and the server with two interfaces, en0 and en1. The client-side interface (en0) has an IP address of 192.168.5.1, and the server-side interface (en1) has an IP address of 10.10.1.1.
+
+- **Server (Raspberry Pi within the vault)**: The server is connected to the router with an IP address of 10.10.1.231 on interface en0. It runs two processes that are listening on ports 9999 and 51130. It's linked to an Arduino controller that can open the vault door.
+
+
 ## Attack Scenarios
 
-The project addresses the following attack scenarios:
+#### Prerequisites
 
-- [KGL-win](KGL-win)
-- [Vulnerable website](Vulnerable-Website)
-    - [SQL INJECTION](Vulnerable-Website/Attacks/SQL-INJECTION)
-    - [Broken access control](Vulnerable-Website/Attacks/Broken-Access-Control)
-- [BadUSB](BadUSB)
-- [Stolen Fingerprint](Stolen-Fingerprint)
+The project includes a set of prerequisites in the [Prerequisites](Prerequisites) folder.
 
-## Mitigations
+#### Attacks
 
-To mitigate the identified threats, refer to the following folders:
+    The project addresses the following attack scenarios:
 
-- [KGL-win Mitigations](KGL-win/Mitigations)
-- [Vulnerable website Mitigations](Vulnerable-Website/Mitigations)
-- [BadUSB Mitigations](BadUSB/Mitigations)
-- [Stolen Fingerprint Mitigations](Stolen-Fingerprint/Mitigations)
+    - [KGL-win](KGL-win/Attacks)
+    - [Vulnerable website](Vulnerable-Website)
+        - [SQL INJECTION](Vulnerable-Website/Attacks/SQL-INJECTION)
+        - [Broken access control](Vulnerable-Website/Attacks/Broken-Access-Control)
+    - [BadUSB](BadUSB/Attacks)
+    - [Stolen Fingerprint](Stolen-Fingerprint/Attacks)
 
-For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
+#### Mitigations
+
+    To mitigate the identified threats, refer to the following folders:
+
+    - [KGL-win Mitigations](KGL-win/Mitigations)
+    - [Vulnerable website Mitigations](Vulnerable-Website/Mitigations)
+    - [BadUSB Mitigations](BadUSB/Mitigations)
+    - [Stolen Fingerprint Mitigations](Stolen-Fingerprint/Mitigations)
+
+    For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
 
 ## Conclusion
 
