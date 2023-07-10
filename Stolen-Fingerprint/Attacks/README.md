@@ -38,7 +38,3 @@ To reproduce the attack on fingerprint theft, follow these steps:
    - Prepare the HALOT-ONE PLUS Resin 3D Printer or a compatible 3D printer for printing.
    - Load the generated STL file onto the printer.
    - Initiate the printing process and ensure the fingerprint model is accurately reproduced.
-
-## Disclaimer
-
-The attack on fingerprint theft is presented for educational purposes only. It is important to understand that fingerprint theft is illegal and unethical. This project aims to raise awareness about the vulnerabilities associated with fingerprint security and promote better security practices.

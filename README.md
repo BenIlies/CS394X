@@ -100,4 +100,4 @@ By implementing these mitigations, we can enhance the security posture of OT sys
 
 ## Disclaimer
 
-The attack on fingerprint theft is presented for educational purposes only. It is important to understand that fingerprint theft is illegal and unethical. This project aims to raise awareness about the vulnerabilities associated with fingerprint security and promote better security practices.
+This project is for educational purposes only. We do not support or encourage any illegal or unethical activities.
