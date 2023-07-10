@@ -44,7 +44,7 @@ The `executable-open-vault.py` script is used to generate an executable that can
 
 6. Whitelist the Executable:
 
-   - To Do
+    - [ ] **To be updated:** Provide steps to whitelist the executable.
 
 ## TLS Encryption with Passphrase
 
