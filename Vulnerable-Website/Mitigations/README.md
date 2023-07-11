@@ -1,7 +1,6 @@
 # Vulnerable Website Mitigations
 
-In our setup, vulnerable website is listening on port 51130 and with a database. The mitigated files can be found in the `html` folder.
-## Mitigations
+In our setup, a vulnerable website is listening on port 51130 and is connected to a database. The mitigated files, which have been secured against vulnerabilities, can be found in the `html` folder.
 
 ### SQL Injection
 
@@ -17,7 +16,55 @@ The code snippet uses regular expressions to check if the `id` and `pw` variable
 
 ### Broken Access Control
 
-- [ ] **To be updated:** Provide mitigation techniques for Broken Access Control vulnerability.
+#### Deny Access to Database Directory
+
+To mitigate the Broken Access Control vulnerability in our setup:
+
+Modify the `/etc/apache2/apache.conf` file and add the following configuration to deny access to the `/var/www/html/__db__/` directory:
+
+```
+<Directory /var/www/html/__db__/>
+    Require all denied
+</Directory>
+```
+
+This configuration ensures that users are completely denied access to the database files within the `/var/www/html/__db__/` directory.
+
+#### Implement Session Management
+
+1. Update the `/var/www/html/index.php` file with the following code snippet to implement session management:
+
+    ```php
+    <?php
+        session_start();
+        // ...
+        if (...) {
+            $_SESSION["login_success"] = true;
+        } else {
+            $_SESSION["login_success"] = false;
+        }
+    ?>
+    ```
+
+    This code snippet initiates a session and sets the `login_success` session variable to either true or false based on the authentication result.
+
+2. Implement authorized access enforcement in the `/var/www/html/control.php` file by adding the following code snippet:
+
+    ```php
+    <?php
+        session_start();
+        if ($_SESSION['login_success'] === true) {
+            $open = $_POST['open'];
+            if ($open === 'open') {
+                system("echo create | nc 127.0.0.1 9999");
+            }
+        } elseif ($_SESSION['login_success'] === false) {
+            exit("<script>alert('Unauthorized access!'); location.href='/index.php';</script>");
+        }
+    ?>
+    ```
+
+    This code snippet verifies the `login_success` session variable to ensure that only authenticated users with a successful login can execute actions such as opening the vault.
 
 ### General Mitigation Techniques
 
