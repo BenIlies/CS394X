@@ -83,6 +83,12 @@ To mitigate the identified threats, refer to the following folders:
 
 For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
 
+#### Zeek Network Monitoring
+
+In addition to the above attack scenarios and mitigations, the project utilizes Zeek as a network monitoring tool. Zeek (formerly known as Bro) is a powerful network analysis framework that operates as an Intrusion Detection System (IDS). It enables the monitoring, analysis, and tracking of network traffic in real-time.
+
+For more details on how Zeek is utilized in this project, refer to the [Zeek](Zeek) folder.
+
 ## Conclusion
 
 Through this project, we have explored various OT vulnerabilities and emphasized the importance of implementing effective mitigations. Some of the recommended mitigation methods include:
