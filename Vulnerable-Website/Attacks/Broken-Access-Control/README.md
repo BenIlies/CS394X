@@ -34,7 +34,9 @@ To exploit the Broken Access Control vulnerability in the vulnerable website, fo
 
     This command uses SQLite to query and retrieve the data from the user table within the obtained database file.
 
-      ![Database Dumping](database-dumping.PNG)
+    <div align="center">
+        <img src="database-dumping.PNG" alt="Database Dumping">
+    </div>
 
 ## Lack of Session Management
 

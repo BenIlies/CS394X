@@ -20,7 +20,9 @@ To perform the BadUSB attack using Arduino with Teensy (version 2.0 or later) to
 
 6. Open the `bad-usb.ino` file: Go to `File > Open` and navigate to the location where you saved the `bad-usb.ino` file. Open the file in the Arduino IDE.
 
- ![BadUSB Code](bad-usb-code.PNG)
+<div align="center">
+    <img src="bad-usb-code.PNG" alt="BadUSB Code">
+</div>
 
 7. Verify and Upload the code: Click on the Verify (checkmark) button to compile the code. Once the compilation is successful, click on the Upload (right arrow) button to upload the code to your Teensy board.
 
