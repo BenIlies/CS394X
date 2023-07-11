@@ -34,6 +34,8 @@ To exploit the Broken Access Control vulnerability in the vulnerable website, fo
 
     This command uses SQLite to query and retrieve the data from the user table within the obtained database file.
 
+      ![Database Dumping](database-dumping.PNG)
+
 ## Lack of Session Management
 
 1. In addition to the access to the database directory, there is a lack of Session Management for accessing the `control.php` page. This means that even without authenticating, a malicious user can still access the page.
