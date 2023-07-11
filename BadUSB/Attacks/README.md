@@ -1,10 +1,10 @@
 # BadUSB Attacks
 
-The BadUSB attack leverages the ability of an Arduino board with Teensy to act as a Human Interface Device (HID) and impersonate a keyboard to exploit vulnerabilities in target systems.
+The BadUSB attack leverages the ability of a microcontroller (Teensy 2.0 dev board) with USB to act as a Human Interface Device (HID) and impersonate a keyboard to exploit vulnerabilities in target systems.
 
 ## Instructions
 
-To perform the BadUSB attack using Arduino with Teensy (version 2.0 or later) to open the vault, follow these steps:
+To perform the BadUSB attack using Teensy dev board (version 2.0 or later) to open the vault, follow these steps:
 
 1. Install the Arduino IDE: Download and install the latest version of the Arduino IDE from the official Arduino website (https://www.arduino.cc/en/software).
 
