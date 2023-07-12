@@ -12,6 +12,12 @@ print("Root folder location:", root_path)
 docs_path = os.path.join(root_path, 'docs')
 print("Doc folder location:", docs_path)
 
+os.chdir(parent_folder)
+
+# Verify the new current working directory
+new_current_folder = os.getcwd()
+print("New current folder location:", new_current_folder)
+
 # Create the "docs" folder if it doesn't exist
 if not os.path.exists(docs_path):
     os.makedirs(docs_path)
