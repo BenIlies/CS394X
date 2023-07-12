@@ -1,5 +1,7 @@
 import os
 import shutil
+import sys
+sys.path.insert(0, os.path.abspath('../'))
 
 current_folder = os.getcwd()
 print("Current folder location:", current_folder)
