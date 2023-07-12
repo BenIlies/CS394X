@@ -13,7 +13,7 @@ new_current_folder = os.getcwd()
 print("New current folder location:", new_current_folder)
 
 # Define the root and destination paths
-root_path = os.path.dirname(os.path.abspath(__file__))
+root_path = os.path.dirname(os.getcwd())
 print("Root folder location:", root_path)
 docs_path = os.path.join(root_path, 'docs')
 print("Doc folder location:", docs_path)
