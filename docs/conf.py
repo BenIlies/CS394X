@@ -6,17 +6,17 @@ print("Current folder location:", current_folder)
 parent_folder = os.path.dirname(current_folder)
 print("Parent folder location:", parent_folder)
 
-# Define the root and destination paths
-root_path = os.path.dirname(os.path.abspath(__file__))
-print("Root folder location:", root_path)
-docs_path = os.path.join(root_path, 'docs')
-print("Doc folder location:", docs_path)
-
 os.chdir(parent_folder)
 
 # Verify the new current working directory
 new_current_folder = os.getcwd()
 print("New current folder location:", new_current_folder)
+
+# Define the root and destination paths
+root_path = os.path.dirname(os.path.abspath(__file__))
+print("Root folder location:", root_path)
+docs_path = os.path.join(root_path, 'docs')
+print("Doc folder location:", docs_path)
 
 # Create the "docs" folder if it doesn't exist
 if not os.path.exists(docs_path):
