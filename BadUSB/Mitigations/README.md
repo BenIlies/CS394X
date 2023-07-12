@@ -51,7 +51,7 @@ The `executable-open-vault.py` script is used to generate an executable that can
 We can implement MFA so that when the badUSB triggers the connection, the user receives a 6-digit password on his phone (since we are separated from the internet, we use the LCD of the vault) that he will input to successfully open the door. More information can be found in the `fix-server-mfa.py` file.
 
    <div align="center">
-      <img src="remote-access-mfa.PNG" alt="Remote Access MFA">
+      <img src="https://github.com/BenIlies/CS394X/raw/main/BadUSB/Mitigations/remote-access-mfa.PNG" alt="Remote Access MFA">
    </div>
 
    > Note: The specific factors used in the MFA setup can vary but typically involve a combination of something the user knows (such as a password or PIN), something the user has (such as a smart card or token), or something the user is (biometric attributes other than fingerprints).
