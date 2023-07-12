@@ -5,14 +5,14 @@ To mitigate the risks associated with fingerprint theft, the following mitigatio
 1. **Increasing Confidence Threshold**: By increasing the threshold of confidence required for accepting a fingerprint, it becomes more challenging for an attacker to successfully use a fake fingerprint. However, one drawback of this approach is that it may increase the percentage of false negatives, where genuine fingerprints are mistakenly rejected. Care should be taken to strike the right balance between security and usability.
 
 <div align="center">
-    <img src="https://github.com/BenIlies/CS394X/raw/main/Stolen-Fingerprint/Mitigations/confidence-score.PNG" alt="Confidence Score">
+    <img src="confidence-score.PNG" alt="Confidence Score">
 </div>
 
 2. **Multi-Factor Authentication (MFA)**: Implementing multi-factor authentication adds an extra layer of security by requiring additional authentication factors besides the fingerprint. In the `fix-server-mfa.py` implementation, multi-factor authentication is used with a PIN and the fingerprint. This means that the user needs to provide both the correct PIN and a valid fingerprint to gain access, significantly enhancing the security of the system.
 
 
 <div align="center">
-    <img src="https://github.com/BenIlies/CS394X/raw/main/Stolen-Fingerprint/Mitigations/vault-mfa.PNG" alt="Confidence Score">
+    <img src="vault-mfa.PNG" alt="Confidence Score">
 </div>
 
 
