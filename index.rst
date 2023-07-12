@@ -50,41 +50,41 @@ Topology
                         +----------------------------------------------------+
 
 
-Attack Scenarios
-----------------
+.. toctree::
+   :maxdepth: 2
 
 Prerequisites
---------------
-* :doc:`Prerequisites/README <Prerequisites/README>`
+-------------
+:doc:`Prerequisites </Prerequisites/README>`
 
 Attacks
 -------
-* KGL-win
-    * :doc:`KGL-win/Attacks/README <KGL-win/Attacks/README>`
-* Vulnerable-Website
-    * Broken Access Control
-        * :doc:`Vulnerable-Website/Attacks/Broken-Access-Control/README <Vulnerable-Website/Attacks/Broken-Access-Control/README>`
-    * SQL Injection
-        * :doc:`Vulnerable-Website/Attacks/SQL-Injection/README <Vulnerable-Website/Attacks/SQL-Injection/README>`
-* BadUSB
-    * :doc:`BadUSB/Attacks/README <BadUSB/Attacks/README>`
-* Stolen-Fingerprint
-    * :doc:`Stolen-Fingerprint/Attacks/README <Stolen-Fingerprint/Attacks/README>`
+KGL-win
+   :doc:`KGL-win Attacks </KGL-win/Attacks/README>`
+Vulnerable-Website
+   Broken Access Control
+      :doc:`Broken Access Control Attacks </Vulnerable-Website/Attacks/Broken-Access-Control/README>`
+   SQL Injection
+      :doc:`SQL Injection Attacks </Vulnerable-Website/Attacks/SQL-Injection/README>`
+BadUSB
+   :doc:`BadUSB Attacks </BadUSB/Attacks/README>`
+Stolen-Fingerprint
+   :doc:`Stolen-Fingerprint Attacks </Stolen-Fingerprint/Attacks/README>`
 
 Mitigations
 -----------
-* KGL-win
-    * :doc:`KGL-win/Mitigations/README <KGL-win/Mitigations/README>`
-* Vulnerable-Website
-    * :doc:`Vulnerable-Website/Mitigations/README <Vulnerable-Website/Mitigations/README>`
-* BadUSB
-    * :doc:`BadUSB/Mitigations/README <BadUSB/Mitigations/README>`
-* Stolen-Fingerprint
-    * :doc:`Stolen-Fingerprint/Mitigations/README <Stolen-Fingerprint/Mitigations/README>`
+KGL-win
+   :doc:`KGL-win Mitigations </KGL-win/Mitigations/README>`
+Vulnerable-Website
+   :doc:`Vulnerable-Website Mitigations </Vulnerable-Website/Mitigations/README>`
+BadUSB
+   :doc:`BadUSB Mitigations </BadUSB/Mitigations/README>`
+Stolen-Fingerprint
+   :doc:`Stolen-Fingerprint Mitigations </Stolen-Fingerprint/Mitigations/README>`
 
 Zeek Network Monitoring
 -----------------------
-* :doc:`Zeek/README <Zeek/README>`
+:doc:`Zeek Network Monitoring </Zeek/README>`
 
 
 Conclusion
