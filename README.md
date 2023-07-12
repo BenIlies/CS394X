@@ -67,7 +67,7 @@ The project addresses the following attack scenarios:
 
 - [KGL-win](KGL-win/Attacks)
 - [Vulnerable website](Vulnerable-Website)
-    - [SQL INJECTION](Vulnerable-Website/Attacks/SQL-INJECTION)
+    - [SQL Injection](Vulnerable-Website/Attacks/SQL-Injection)
     - [Broken access control](Vulnerable-Website/Attacks/Broken-Access-Control)
 - [BadUSB](BadUSB/Attacks)
 - [Stolen Fingerprint](Stolen-Fingerprint/Attacks)
