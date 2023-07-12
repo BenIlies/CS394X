@@ -54,37 +54,38 @@ Attack Scenarios
 ----------------
 
 Prerequisites
-~~~~~~~~~~~~~
+--------------
+* :doc:`Prerequisites/README <Prerequisites/README>`
 
-The project includes a set of prerequisites in the [Prerequisites](Prerequisites/README.md) folder.
-
-.. toctree::
-   :maxdepth: 1
-
-   KGL-win/Attacks/README.md
-   Vulnerable-Website/README.md
-   BadUSB/Attacks/README.md
-   Stolen-Fingerprint/Attacks/README.md
+Attacks
+-------
+* KGL-win
+    * :doc:`KGL-win/Attacks/README <KGL-win/Attacks/README>`
+* Vulnerable-Website
+    * Broken Access Control
+        * :doc:`Vulnerable-Website/Attacks/Broken-Access-Control/README <Vulnerable-Website/Attacks/Broken-Access-Control/README>`
+    * SQL Injection
+        * :doc:`Vulnerable-Website/Attacks/SQL-Injection/README <Vulnerable-Website/Attacks/SQL-Injection/README>`
+* BadUSB
+    * :doc:`BadUSB/Attacks/README <BadUSB/Attacks/README>`
+* Stolen-Fingerprint
+    * :doc:`Stolen-Fingerprint/Attacks/README <Stolen-Fingerprint/Attacks/README>`
 
 Mitigations
-~~~~~~~~~~~
-
-To mitigate the identified threats, refer to the following folders:
-
-.. toctree::
-   :maxdepth: 1
-
-   KGL-win/Mitigations/README.md
-   Vulnerable-Website/Mitigations/README.md
-   BadUSB/Mitigations/README.md
-   Stolen-Fingerprint/Mitigations/README.md
+-----------
+* KGL-win
+    * :doc:`KGL-win/Mitigations/README <KGL-win/Mitigations/README>`
+* Vulnerable-Website
+    * :doc:`Vulnerable-Website/Mitigations/README <Vulnerable-Website/Mitigations/README>`
+* BadUSB
+    * :doc:`BadUSB/Mitigations/README <BadUSB/Mitigations/README>`
+* Stolen-Fingerprint
+    * :doc:`Stolen-Fingerprint/Mitigations/README <Stolen-Fingerprint/Mitigations/README>`
 
 Zeek Network Monitoring
-~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
+* :doc:`Zeek/README <Zeek/README>`
 
-In addition to the above attack scenarios and mitigations, the project utilizes Zeek as a network monitoring tool. Zeek (formerly known as Bro) is a powerful network analysis framework that operates as an Intrusion Detection System (IDS). It enables the monitoring, analysis, and tracking of network traffic in real-time.
-
-For more details on how Zeek is utilized in this project, refer to the [Zeek](Zeek/README.md) folder.
 
 Conclusion
 ----------
