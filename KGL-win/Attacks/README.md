@@ -1,8 +1,8 @@
-## KGL Win Software Buffer Overflow Vulnerability
+# KGL Win Software Buffer Overflow Vulnerability
 
 The KGL Win software is a tool provided by LS Electric, a South Korean company that offers PLCs (Programmable Logic Controllers) and other electrical equipment. KGL Win allows you to generate project files for programming PLCs. However, there is a vulnerability in the software that can be exploited through a buffer overflow.
 
-### Understanding the Vulnerability:
+## Understanding the Vulnerability:
 
 The buffer overflow vulnerability in KGL Win arises when the software attempts to load a specially crafted malicious file. This can lead to an overflow of data into adjacent memory space, allowing an attacker to execute malicious code.
 
@@ -10,7 +10,7 @@ The specific attack described here was discovered using fuzzing techniques, whic
 
 To exploit this vulnerability, an attacker would need to entice the user of the target machine to open the malicious file using KGL Win. This can be achieved by sending the file as an email attachment or distributing it through a malicious download, for example.
 
-### Instructions for Exploiting the Vulnerability:
+## Instructions for Exploiting the Vulnerability:
 
 1. **Generating the Malicious Project File**: Create a project file named "Performance_Enchanced_test.kpr" with the ".kpr" file extension. This file will trigger the buffer overflow when opened with KGL Win.
 

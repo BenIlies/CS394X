@@ -42,7 +42,7 @@ By following the steps below, you will create a trusted executable file using th
      - Enable the Windows Firewall in the Windows Firewall settings.
 
    <div align="center">
-      <img src="https://github.com/BenIlies/CS394X/raw/main/BadUSB/Mitigations/firewall-enabling.PNG" alt="Enabling firewall">
+      <img src="https://github.com/BenIlies/CS394X/raw/main/KGL-win/Mitigations/firewall-enabling.PNG" alt="Enabling firewall">
    </div>
 
    - Access the advanced settings and verify the rules for Domain, Public, and Private profiles:
@@ -61,7 +61,7 @@ By following the steps below, you will create a trusted executable file using th
    - Apply the changes and close the rule properties.
 
    <div align="center">
-      <img src="https://github.com/BenIlies/CS394X/raw/main/BadUSB/Mitigations/executable-whitelisted.PNG" alt="Executable whitelisted">
+      <img src="https://github.com/BenIlies/CS394X/raw/main/KGL-win/Mitigations/executable-whitelisted.PNG" alt="Executable whitelisted">
    </div>
 
    Ensure that the rule you created is enabled. This configuration will restrict every application from communicating with the server (IP: 10.10.1.231, Port: 9999) except for the trusted Open Vault executable. By implementing these measures, you enhance security by limiting direct connections and mitigating potential attacks.

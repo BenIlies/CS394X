@@ -2,7 +2,7 @@
 
 ## First problem: Direct connection
 
-#### Attack
+### Attack
 
 With the current topology, an attacker can just connect to the vault and open it using the following command:
 
@@ -10,7 +10,7 @@ With the current topology, an attacker can just connect to the vault and open it
 echo create | nc 10.10.1.231 9999
 ```
 
-#### Mitigation
+### Mitigation
 
 To mitigate the risk of direct connection to the vault, you can add network access control on the router. This can be achieved by entering the following command on the router:
 
@@ -20,7 +20,7 @@ iptables -A FORWARD ! -s 192.168.5.107 -d 10.10.1.231 -p tcp --dport 9999 -j DRO
 
 ## Second problem: Race Condition Exploitation
 
-#### Attack
+### Attack
 
 In the given scenario, the attacker can exploit a race condition to gain unauthorized access to the vault. Here's how the attack can be executed:
 
@@ -31,15 +31,13 @@ In the given scenario, the attacker can exploit a race condition to gain unautho
 5. Before the real `192.168.5.107` can respond with an RST (reset) packet to terminate the connection, the attacker quickly sends an ACK (acknowledgment) and PSH/ACK (push acknowledgment) within a single packet.
 6. The Raspberry Pi, still assuming the spoofed IP address `192.168.5.107` is legitimate, receives the combined ACK and PSH/ACK packet and interprets it as a valid command to open the door of the vault.
 
-#### Mitigation
-
 ## Second Problem: Race Condition Exploitation
 
-#### Attack
+### Attack
 
 The attacker initiates the attack from their real IP address (`192.168.5.108`) and spoofs their IP address as `192.168.5.107`, impersonating another legitimate device. By exploiting a race condition, the attacker sends a SYN packet, receives a SYN/ACK packet from the Raspberry Pi (server), and quickly sends an ACK and PSH/ACK packet to open the door of the vault.
 
-#### Mitigation
+### Mitigation
 
 To effectively mitigate race condition exploitation and completely eliminate the risk of unauthorized access, the following comprehensive mitigation strategies should be implemented:
 

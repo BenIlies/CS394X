@@ -57,11 +57,11 @@ Topology Description:
 
 ## Attack Scenarios
 
-#### Prerequisites
+### Prerequisites
 
 The project includes a set of prerequisites in the [Prerequisites](Prerequisites) folder.
 
-#### Attacks
+### Attacks
 
 The project addresses the following attack scenarios:
 
@@ -72,7 +72,7 @@ The project addresses the following attack scenarios:
 - [BadUSB](BadUSB/Attacks)
 - [Stolen Fingerprint](Stolen-Fingerprint/Attacks)
 
-#### Mitigations
+### Mitigations
 
 To mitigate the identified threats, refer to the following folders:
 
@@ -83,7 +83,7 @@ To mitigate the identified threats, refer to the following folders:
 
 For specific attacks related to each scenario, refer to the respective "Attacks" folders within each scenario folder.
 
-#### Zeek Network Monitoring
+### Zeek Network Monitoring
 
 In addition to the above attack scenarios and mitigations, the project utilizes Zeek as a network monitoring tool. Zeek (formerly known as Bro) is a powerful network analysis framework that operates as an Intrusion Detection System (IDS). It enables the monitoring, analysis, and tracking of network traffic in real-time.
 

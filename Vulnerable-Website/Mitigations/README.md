@@ -2,7 +2,7 @@
 
 In our setup, a vulnerable website is listening on port 51130 and is connected to a database. The mitigated files, which have been secured against vulnerabilities, can be found in the `html` folder.
 
-### SQL Injection
+## SQL Injection
 
 To mitigate the SQL Injection vulnerability, implement input sanitization techniques. Modify the `/var/www/html/index.php` file with the following code snippet:
 
@@ -14,9 +14,9 @@ if (preg_match('/[^a-zA-Z0-9-_-]+/', $id) || preg_match('/[^a-zA-Z0-9-_-]+/', $p
 
 The code snippet uses regular expressions to check if the `id` and `pw` variables contain any special characters. If special characters are found, an alert is displayed, and the user is redirected back to the `index.php` page.
 
-### Broken Access Control
+## Broken Access Control
 
-#### Deny Access to Database Directory
+### Deny Access to Database Directory
 
 To mitigate the Broken Access Control vulnerability in our setup:
 
@@ -30,7 +30,7 @@ Modify the `/etc/apache2/apache.conf` file and add the following configuration t
 
 This configuration ensures that users are completely denied access to the database files within the `/var/www/html/__db__/` directory.
 
-#### Implement Session Management
+### Implement Session Management
 
 1. Update the `/var/www/html/index.php` file with the following code snippet to implement session management:
 
@@ -66,6 +66,6 @@ This configuration ensures that users are completely denied access to the databa
 
     This code snippet verifies the `login_success` session variable to ensure that only authenticated users with a successful login can execute actions such as opening the vault.
 
-### General Mitigation Techniques
+## General Mitigation Techniques
 
 For more information on web application security best practices and to learn about the OWASP Top 10 vulnerabilities, visit the [OWASP Top 10 website](https://owasp.org/www-project-top-ten/).

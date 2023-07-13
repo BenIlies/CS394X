@@ -1,4 +1,4 @@
-### Mitigations for Fingerprint Theft
+# Mitigations for Fingerprint Theft
 
 To mitigate the risks associated with fingerprint theft, the following mitigations have been implemented:
 
