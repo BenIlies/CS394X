@@ -65,3 +65,5 @@ By following the steps below, you will create a trusted executable file using th
    </div>
 
    Ensure that the rule you created is enabled. This configuration will restrict every application from communicating with the server (IP: 10.10.1.231, Port: 9999) except for the trusted Open Vault executable. By implementing these measures, you enhance security by limiting direct connections and mitigating potential attacks.
+
+**Note:** These instructions focus on network-level security and firewall configuration. Techniques like ASLR and stack canaries are important for mitigating buffer overflow attacks but are beyond the scope of this guide.

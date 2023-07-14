@@ -13,7 +13,7 @@ To perform the SQL Injection attack on the vulnerable website, follow these step
    - Leave the "Password" field empty or enter any value.
 
     <div align="center">
-        <img src="https://github.com/BenIlies/CS394X/raw/main/Vulnerable-Website/Attacks/SQL-INJECTION/login-page.PNG" alt="Database Dumping">
+        <img src="https://github.com/BenIlies/CS394X/raw/main/Vulnerable-Website/Attacks/SQL-Injection/login-page.PNG" alt="Database Dumping">
     </div>
 
 3. Submit the login form. The SQL Injection payload `' or 1 --` manipulates the underlying SQL query, bypassing the authentication mechanism and tricks the system into authenticating the user successfully.
@@ -41,5 +41,5 @@ To perform the SQL Injection attack on the vulnerable website, follow these step
     The modified query includes the injected condition `or 1`, which always evaluates to true. As a result, the authentication check is bypassed, and the system considers the login successful. Upon successful login, the vulnerable website redirects the attacker to the `control.php` page, granting them access to open the vault door.
 
     <div align="center">
-        <img src="https://github.com/BenIlies/CS394X/raw/main/Vulnerable-Website/Attacks/SQL-INJECTION/control-page.PNG" alt="Database Dumping">
+        <img src="https://github.com/BenIlies/CS394X/raw/main/Vulnerable-Website/Attacks/SQL-Injection/control-page.PNG" alt="Database Dumping">
     </div>
